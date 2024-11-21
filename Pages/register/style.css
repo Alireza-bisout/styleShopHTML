@@ -1,0 +1,167 @@
+@media screen and (max-width: 767px) {
+    .login-box {
+        padding: 0 4rem !important;
+    }
+
+    .login-box button {
+        width: 50% !important;
+    }
+
+    .bl-shape {
+        bottom: -550px !important;
+        left: -550px !important;
+
+    }
+
+    .login-box {
+        background-color: #00000000 !important;
+    }
+
+    .login-box h2 {
+        color: #E8E8E8 !important;
+    }
+
+    .have-account a {
+        color: #ffffff !important;
+    }
+
+    .login-box button {
+        background-color: #E8E8E8 !important;
+        color: #171615 !important;
+    }
+}
+
+
+body {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#login-document {
+    height: 100vh;
+    position: relative;
+}
+
+.login-card {
+    max-width: 790px;
+    width: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+
+}
+
+.login-box {
+    background-color: #e3e3e3;
+    padding: 120px 7rem 20px 7rem;
+}
+
+.login-box .input-label label {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.login-box .input-label .input {
+    position: relative;
+    border-radius: 58px;
+    overflow: hidden;
+}
+
+.login-box .input-label .input input {
+    width: 100%;
+    border: none;
+    padding: 15px 0;
+    font-size: 12px;
+    padding-right: 45px;
+    border-radius: 58px;
+}
+
+.login-box .input-label .input svg {
+    color: #BABABA;
+    padding: 13px;
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.login-box .input-label .input svg.fa-phone {
+    transform: rotate(270deg);
+}
+
+.login-box button {
+    width: 100%;
+    border: none;
+    border-radius: 58px;
+    padding: 10px 10px 10px 0;
+    margin-top: 35px;
+    background-color: #171615;
+    color: #fff;
+    transition: 300ms;
+}
+
+.login-box button:hover {
+    padding: 10px 0 10px 0;
+}
+
+.login-box button svg {
+    color: #171615 !important;
+    transition: 300ms;
+}
+
+.login-box button:hover svg {
+    color: #fff !important;
+}
+
+.have-account {
+    color: #A2A0A1;
+}
+
+.have-account a {
+    color: #171615;
+}
+
+.bg-img {
+    background-color: #171615;
+}
+
+.login-card .bg-img img {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.bl-shape {
+    background-color: #D1D1D1;
+    width: 900px;
+    height: 700px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: -370px;
+    left: -370px;
+    z-index: -1;
+}
+
+.tr-shape {
+    background-color: #171615;
+    width: 900px;
+    height: 1000px;
+    border-radius: 100px;
+    position: fixed;
+    top: -370px;
+    right: -600px;
+    z-index: -1;
+    transform: rotate(120deg);
+}
+
+.tr-mobile-shape {
+    width: 100%;
+    height: 97%;
+    position: fixed;
+    top: 0;
+    background-color: #171615;
+    z-index: -1;
+    border-radius: 0 0 0 500px;
+}

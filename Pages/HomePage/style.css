@@ -1,0 +1,102 @@
+body {
+    font-family: var(--font-normal) !important;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+
+#header-desktop {
+    max-width: 1920px;
+    /* height: 70vh; */
+    border-radius: 0 0 120px 120px;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+#headerSliderDesktop {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#headerSliderDesktop .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerSliderDesktop .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+
+}
+
+#headerSliderDesktop .pagination-navigation {
+    z-index: 1;
+    position: absolute;
+    bottom: 23px;
+    right: 81px;
+}
+
+.swiper-pagination {
+    position: relative !important;
+}
+
+#headerSliderDesktop .pagination-navigation svg {
+    font-size: 18px;
+    color: #524F54;
+}
+
+header .swiper-pagination-bullet-active {
+    background-color: #524F54 !important;
+
+}
+
+header .swiper-pagination-bullet {
+    border: 2px solid #524F54;
+    background-color: #00000000;
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+
+}
+
+.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    left: 0 !important;
+    transform: translateX(0) !important;
+    white-space: normal !important;
+
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 0 !important;
+}
+
+
+
+#headerSliderMobile .swiper-slide {
+    width: 100%;
+}
+
+#headerSliderMobile .swiper-slide-next img,
+#headerSliderMobile .swiper-slide-prev  img{
+    transform: rotateX(45deg);
+    transition: 300ms;
+}
+
+#headerSliderMobile .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
