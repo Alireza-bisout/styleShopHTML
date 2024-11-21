@@ -121,5 +121,6 @@
     --font-800: iranyekan-800;
     --font-850: iranyekan-850;
     --font-900: iranyekan-900;
-    --primary-color: #AF6E4D
+    --primary-color: #AF6E4D;
+    --transition: 300ms
 }

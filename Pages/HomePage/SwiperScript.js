@@ -28,3 +28,23 @@ var swiper = new Swiper(".headerSliderMobile", {
         clickable: true,
     },
 });
+
+
+var swiper = new Swiper(".season-collection-slider", {
+    slidesPerView: 1.5, // mobile
+    spaceBetween: 10,
+    loop: true,
+    speed: 4800,
+    autoplay,
+    breakpoints: {
+        768: {
+            slidesPerView: 2.2, // tablet
+        },
+        992: {
+            slidesPerView: 4, // desktop
+        },
+        1200: {
+            slidesPerView: 5, // large
+        },
+    },
+});

@@ -3,6 +3,12 @@ body {
     direction: rtl;
     margin: 0;
     padding: 0;
+    background-color: #ececec;
+
+}
+
+a {
+    text-decoration: none !important;
 }
 
 #header-desktop {
@@ -89,7 +95,7 @@ header .swiper-pagination-bullet {
 }
 
 #headerSliderMobile .swiper-slide-next img,
-#headerSliderMobile .swiper-slide-prev  img{
+#headerSliderMobile .swiper-slide-prev img {
     transform: rotateX(45deg);
     transition: 300ms;
 }
@@ -99,4 +105,151 @@ header .swiper-pagination-bullet {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+}
+
+
+/* Season collection */
+
+#season-collection {
+    max-width: 1920px;
+}
+
+#season-collection .model-box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #F0F0F0;
+    border-radius: 20px;
+    aspect-ratio: 3/4;
+    transition: var(--transition);
+}
+
+#season-collection .model-box:hover .box-shadow-hover {
+ opacity: 1;
+}
+
+#season-collection  .box-shadow-hover {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.767) 100%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: var(--transition);
+    opacity: 0;
+}
+
+#season-collection .model-box img {
+    width: 100%;
+}
+
+#season-collection .box-shadow {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.767) 100%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: var(--transition);
+}
+
+#season-collection .order-all {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #ffffff;
+
+}
+
+#season-collection .order-all svg {
+    font-size: 20px;
+    margin-right: 5px;
+    transition: var(--transition);
+}
+
+#season-collection .order-all:hover svg {
+    font-size: 25px;
+}
+
+#season-collection .swiper-slide {
+    width: 100%;
+}
+
+#season-collection .product-box {
+    background-color: #F0F0F0;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#season-collection .product-box img {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 3/3;
+}
+
+#season-collection .product-box .title-product {
+    font-size: 20px;
+    font-family: var(--font-bold);
+}
+
+#season-collection .product-box .shop-name {
+    font-size: 13px;
+    color: #565656;
+}
+
+#season-collection .product-box .product-price {
+    font-size: 17px;
+    font-family: var(--font-bold);
+}
+
+#season-collection .product-box button {
+    border: none;
+    background-color: var(--primary-color);
+    color: #F0F0F0;
+    border-radius: 11px;
+    padding: 5px 0 5px 20px;
+    transition: var(--transition);
+}
+
+#season-collection .product-box button:hover {
+    padding: 5px 0;
+}
+
+#season-collection .product-box svg {
+    color: #f0f0f000;
+    transition: var(--transition);
+}
+
+#season-collection .product-box button:hover svg {
+    color: #F0F0F0;
+}
+
+#season-collection .produt-sliders {
+    position: relative;
+    left: 50px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+#season-collection .title-section h4 {
+    font-family: var(--font-bold);
+}
+
+#season-collection .title-section span,
+#season-collection .title-section svg {
+    color: #7D7D7D;
+    transition: var(--transition);
+
+}
+
+#season-collection .title-section:hover svg {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    #season-collection .produt-sliders {
+        left: 0;
+    }
 }
