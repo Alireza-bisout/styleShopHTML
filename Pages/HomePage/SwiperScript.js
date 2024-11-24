@@ -44,7 +44,17 @@ var swiper = new Swiper(".season-collection-slider", {
             slidesPerView: 4, // desktop
         },
         1200: {
-            slidesPerView: 5, // large
+            slidesPerView: 4, // large
         },
+    },
+});
+
+
+
+var swiper = new Swiper(".category-slider", {
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".cat-next",
+        prevEl: ".cat-prev",
     },
 });
