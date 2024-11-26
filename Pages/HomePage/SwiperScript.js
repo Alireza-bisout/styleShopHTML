@@ -58,3 +58,46 @@ var swiper = new Swiper(".category-slider", {
         prevEl: ".cat-prev",
     },
 });
+
+
+var swiper = new Swiper(".special-ceasonal-clothes-slider", {
+    slidesPerView: 2, // mobile
+    spaceBetween: 25,
+    loop,
+    navigation: {
+        nextEl: ".special-clothes-next",
+        prevEl: ".special-clothes-prev",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2.2, // tablet
+        },
+        992: {
+            slidesPerView: 4, // desktop
+        },
+        1200: {
+            slidesPerView: 4, // large
+        },
+    },
+});
+
+var swiper = new Swiper(".special-sale-slider", {
+    slidesPerView: 2, // mobile
+    spaceBetween: 10,
+    loop,
+    navigation: {
+        nextEl: ".special-sale-next",
+        prevEl: ".special-sale-prev",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2.2, // tablet
+        },
+        992: {
+            slidesPerView: 4, // desktop
+        },
+        1200: {
+            slidesPerView: 3, // large
+        },
+    },
+});
