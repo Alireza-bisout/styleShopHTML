@@ -31,14 +31,14 @@ var swiper = new Swiper(".headerSliderMobile", {
 
 
 var swiper = new Swiper(".season-collection-slider", {
-    slidesPerView: 1.5, // mobile
+    slidesPerView: 1, // mobile
     spaceBetween: 10,
     loop: true,
     speed: 4800,
     autoplay,
     breakpoints: {
         768: {
-            slidesPerView: 2.2, // tablet
+            slidesPerView: 2, // tablet
         },
         992: {
             slidesPerView: 4, // desktop
@@ -62,7 +62,7 @@ var swiper = new Swiper(".category-slider", {
 
 var swiper = new Swiper(".special-ceasonal-clothes-slider", {
     slidesPerView: 2, // mobile
-    spaceBetween: 25,
+    spaceBetween: 10,
     loop,
     navigation: {
         nextEl: ".special-clothes-next",
@@ -71,6 +71,7 @@ var swiper = new Swiper(".special-ceasonal-clothes-slider", {
     breakpoints: {
         768: {
             slidesPerView: 2.2, // tablet
+            spaceBetween: 25,
         },
         992: {
             slidesPerView: 4, // desktop
@@ -82,7 +83,7 @@ var swiper = new Swiper(".special-ceasonal-clothes-slider", {
 });
 
 var swiper = new Swiper(".special-sale-slider", {
-    slidesPerView: 2, // mobile
+    slidesPerView: 1.5, // mobile
     spaceBetween: 10,
     loop,
     navigation: {
@@ -91,13 +92,53 @@ var swiper = new Swiper(".special-sale-slider", {
     },
     breakpoints: {
         768: {
+            slidesPerView: 1.5, // tablet
+        },
+        992: {
+            slidesPerView: 2.5, // desktop
+        },
+        1200: {
+            slidesPerView: 3, // large
+        },
+    },
+});
+
+
+var swiper = new Swiper(".latest-styles-slider", {
+    slidesPerView: 2, // mobile
+    spaceBetween: 10,
+    loop,
+    navigation: {
+        nextEl: ".latest-styles-next",
+        prevEl: ".latest-styles-prev",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2.2, // tablet
+            spaceBetween: 25,
+        },
+        992: {
+            slidesPerView: 4, // desktop
+        },
+        1200: {
+            slidesPerView: 4, // large
+        },
+    },
+});
+
+var swiper = new Swiper(".best-selling-styles-slider", {
+    slidesPerView: 2, // mobile
+    spaceBetween: 10,
+    loop,
+    breakpoints: {
+        768: {
             slidesPerView: 2.2, // tablet
         },
         992: {
             slidesPerView: 4, // desktop
         },
         1200: {
-            slidesPerView: 3, // large
+            slidesPerView: 4, // large
         },
     },
 });

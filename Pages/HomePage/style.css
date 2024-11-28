@@ -1,3 +1,98 @@
+/* Media Query */
+
+@media screen and (max-width: 767px) {
+    .product-box .title-product {
+        font-size: 15px !important;
+    }
+
+    .product-box .shop-name {
+        font-size: 11px !important;
+    }
+
+    .product-box .product-price .main-price {
+        font-size: 15px !important;
+    }
+
+    .product-box .sizes span {
+        font-size: 13px;
+    }
+
+    .product-box .product-price .main-price {
+        font-size: 14px !important;
+    }
+
+    .product-box .product-price .discounted-price {
+        font-size: 11px !important;
+        margin-top: 5px;
+    }
+
+    .product-box .product-price .discounted-price .currency {
+        font-size: 11px;
+    }
+
+    .product-box .specially-for span {
+        font-size: 12px
+    }
+
+    .div-title-section h3 {
+        font-family: var(--font-bold);
+        font-size: 20px;
+    }
+
+    .div-title-section.mobile {
+        color: #ffffff;
+    }
+
+    #category .category-box img {
+        height: 150px !important;
+    }
+
+    #category .category-box .category-title {
+        font-size: 20px !important;
+    }
+
+    #category .category-box .prices {
+        font-size: 13px !important
+    }
+
+    #season-collection {
+        background-color: #000000 !important;
+        padding: 15px 15px 15px 0 !important;
+    }
+
+    #season-collection .swiper-slide {
+        background: #000000 !important;
+    }
+
+    #season-collection .produt-sliders {
+        background-color: #000000 !important;
+    }
+
+    #season-collection .produt-sliders {
+        left: 25px !important;
+    }
+
+    #season-collection .order-all {
+        bottom: 10px !important;
+        right: 10px !important;
+    }
+
+    #season-collection .order-all svg {
+        font-size: 15px !important;
+        margin-right: 3px !important;
+    }
+
+    #season-collection .order-all:hover svg {
+        font-size: 17px !important;
+    }
+
+    #special-sale {
+        background-color: var(--primary-color);
+    }
+
+
+}
+
 /* Product Box */
 
 .product-box {
@@ -7,10 +102,46 @@
     paddin-left: 0 5px 0 5px !important
 }
 
+
+.row-shops .col-shop:nth-child(1) .product-box {
+    background: rgb(185, 124, 1);
+    background: linear-gradient(0deg, #7803f3 0%, #fe7cfd 50%, #7803f3 100%);
+}
+
+.row-shops .col-shop:nth-child(2) .product-box {
+    background: rgb(185, 124, 1);
+    background: linear-gradient(0deg, #2c73f5 0%, #79e2ff 50%, #2c73f5 100%);
+}
+
+.row-shops .col-shop:nth-child(3) .product-box {
+    background: rgb(185, 124, 1);
+    background: linear-gradient(0deg, #038311 0%, #8bfd7c 50%, #038311 100%);
+}
+
+
+.row-shops .col-shop:nth-child(4) .product-box {
+    background: rgb(185, 124, 1);
+    background: linear-gradient(0deg, rgba(185, 124, 1, 1) 0%, rgba(252, 226, 158, 1) 50%, rgba(185, 124, 1, 1) 100%);
+}
+
+
+.product-box .box-shop {
+    background-color: #F0F0F0;
+    border-radius: 20px;
+}
+
 .product-box img {
     width: 100%;
     object-fit: contain;
-    aspect-ratio: 3/3;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
+}
+
+.product-box.latest-styles img {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 5/4;
+    border-radius: 15px;
 }
 
 .product-box .title-product {
@@ -46,28 +177,24 @@
     background: -webkit-linear-gradient(180deg, #52ff9a, #1a9256);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .product-box .specially-for .summer {
     background: -webkit-linear-gradient(180deg, #ff930f, #c4be2a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .product-box .specially-for .autumn {
     background: -webkit-linear-gradient(180deg, #ea5459, #f7ba2c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .product-box .specially-for .winter {
     background: -webkit-linear-gradient(180deg, #61f4de, #6e78ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .product-box .sizes span {
@@ -76,7 +203,6 @@
     border-radius: 8px;
     color: #ffffff;
 }
-
 
 .discounted-price .discounted {
     font-size: 11px;
@@ -100,6 +226,31 @@
     color: #D6173D;
 }
 
+.see-more span,
+.see-more svg {
+    color: #7D7D7D;
+    transition: var(--transition);
+}
+
+.see-more:hover svg {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.div-title-section {
+    font-family: var(--font-bold);
+}
+
+.title-line-right,
+.title-line-left {
+    height: 3px;
+    width: 30%;
+    background: linear-gradient(90deg, var(--primary-color) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.div-title-section .title-line-left {
+    background: linear-gradient(-90deg, var(--primary-color) 0%, rgba(0, 0, 0, 0) 100%);
+}
 
 
 /* Buttons */
@@ -312,28 +463,13 @@ header .swiper-pagination-bullet {
     color: #000000;
 }
 
-@media screen and (max-width: 767px) {
-    #category .category-box img {
-        height: 150px;
-        border-radius: 16px 16px 0 0;
-        border-bottom: 1px solid #d6d6d6;
-    }
-
-    #category .category-box .prices {
-        font-size: 13px;
-    }
-}
-
 /* Season collection */
 
 #season-collection .model-box {
     width: 100%;
-    height: 100%;
     overflow: hidden;
     position: relative;
-    background-color: #F0F0F0;
     border-radius: 20px;
-    aspect-ratio: 3/4;
     transition: var(--transition);
 }
 
@@ -407,36 +543,12 @@ header .swiper-pagination-bullet {
     font-family: var(--font-bold);
 }
 
-#season-collection .title-section span,
-#season-collection .title-section svg {
-    color: #7D7D7D;
-    transition: var(--transition);
-
+#season-collection .season-collection-slider {
+    border-radius: 20px;
 }
 
-#season-collection .title-section:hover svg {
-    font-size: 20px;
-    margin-right: 5px;
-}
-
-@media screen and (max-width: 767px) {
-    #season-collection .produt-sliders {
-        left: 0;
-    }
-}
 
 /* Special Ceasonal Clothes */
-
-.title-line-right,
-.title-line-left {
-    height: 3px;
-    width: 30%;
-    background: linear-gradient(90deg, var(--primary-color) 0%, rgba(0, 0, 0, 0) 100%);
-}
-
-.div-title-section .title-line-left {
-    background: linear-gradient(-90deg, var(--primary-color) 0%, rgba(0, 0, 0, 0) 100%);
-}
 
 #special-ceasonal-clothes-slider .special-clothes-next {
     z-index: 99;
@@ -528,7 +640,7 @@ header .swiper-pagination-bullet {
 #special-sale .special-sale-prev svg {
     color: var(--primary-color);
     background-color: #ffffff;
-    border: 2px solid var(--primary-color);
+    border: 2px solid #ffffff;
     width: 25px;
     height: 25px;
     padding: 4px;
@@ -537,4 +649,73 @@ header .swiper-pagination-bullet {
 
 #special-sale .special-sale-title-section {
     border-left: 10px dashed #ffffff;
+}
+
+#special-sale .special-sale-mobile {
+    color: #ffffff;
+}
+
+#special-sale .special-sale-mobile svg {
+    font-size: 40px;
+}
+
+#special-sale .special-sale-mobile .special-sale-title {
+    font-size: 25px !important;
+    font-family: var(--font-bold);
+}
+
+#special-sale .special-sale-mobile .time-remaining .time {
+    background-color: #ffffff;
+    color: var(--primary-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+#special-sale .special-sale-mobile .time-remaining .colon {
+    font-size: 30px;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#latest-styles-slider .latest-styles-next {
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+#latest-styles-slider .latest-styles-prev {
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+#latest-styles-slider .latest-styles-next svg,
+#latest-styles-slider .latest-styles-prev svg {
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+    border-radius: 5px;
 }
